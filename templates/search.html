@@ -24,7 +24,7 @@
       <ul class="drop"></ul>
     </div>
     <a href="/" class="title-big">
-      <h2 class="title">ucuddle</h1>
+      <h2 class="title">ucuddle</h2>
     </a>
   </header>
   <main>
@@ -34,9 +34,9 @@
        <li>
         <span>{{ website.link[:40] }}</span>
         <a href="{{ website.link }}">
-          <h2>{{ website.title }}</h2>
+          <h2>{{ website.text[:40] }}</h2>
         </a>
-        <p>{{ website.description }}</p>
+        <p>{{ website.text[:150] + "..." }}</p>
       </li>
       {% endfor %}
 
